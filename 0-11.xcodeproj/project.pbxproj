@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3523F8E01E782DF600E7E128 /* Player.m in Sources */ = {isa = PBXBuildFile; fileRef = 3523F8DF1E782DF600E7E128 /* Player.m */; };
+		357E4EFA1E7895A90094AD74 /* CardsPile.m in Sources */ = {isa = PBXBuildFile; fileRef = 357E4EF91E7895A90094AD74 /* CardsPile.m */; };
 		F26C053E1E7644DA00084A14 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F26C053D1E7644DA00084A14 /* main.m */; };
 		F26C05411E7644DA00084A14 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F26C05401E7644DA00084A14 /* AppDelegate.m */; };
 		F26C05431E7644DA00084A14 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = F26C05421E7644DA00084A14 /* GameScene.sks */; };
@@ -18,6 +20,7 @@
 		F26C05531E7644DA00084A14 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F26C05511E7644DA00084A14 /* LaunchScreen.storyboard */; };
 		F26C055E1E7644DA00084A14 /* __11Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = F26C055D1E7644DA00084A14 /* __11Tests.m */; };
 		F26C05691E7644DA00084A14 /* __11UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = F26C05681E7644DA00084A14 /* __11UITests.m */; };
+		F26C05771E76454D00084A14 /* NumbersCard.m in Sources */ = {isa = PBXBuildFile; fileRef = F26C05761E76454D00084A14 /* NumbersCard.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +41,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3523F8DE1E782D7900E7E128 /* Player.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Player.h; sourceTree = "<group>"; };
+		3523F8DF1E782DF600E7E128 /* Player.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Player.m; sourceTree = "<group>"; };
+		357E4EF81E7895840094AD74 /* CardsPile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CardsPile.h; sourceTree = "<group>"; };
+		357E4EF91E7895A90094AD74 /* CardsPile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CardsPile.m; sourceTree = "<group>"; };
 		F26C05391E7644DA00084A14 /* 0-11.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "0-11.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F26C053D1E7644DA00084A14 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		F26C053F1E7644DA00084A14 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -58,6 +65,8 @@
 		F26C05641E7644DA00084A14 /* 0-11UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "0-11UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F26C05681E7644DA00084A14 /* __11UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = __11UITests.m; sourceTree = "<group>"; };
 		F26C056A1E7644DA00084A14 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F26C05761E76454D00084A14 /* NumbersCard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NumbersCard.m; sourceTree = "<group>"; };
+		F26C05781E76457300084A14 /* NumbersCard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NumbersCard.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,6 +125,12 @@
 				F26C05471E7644DA00084A14 /* GameScene.m */,
 				F26C05491E7644DA00084A14 /* GameViewController.h */,
 				F26C054A1E7644DA00084A14 /* GameViewController.m */,
+				F26C05761E76454D00084A14 /* NumbersCard.m */,
+				F26C05781E76457300084A14 /* NumbersCard.h */,
+				357E4EF81E7895840094AD74 /* CardsPile.h */,
+				357E4EF91E7895A90094AD74 /* CardsPile.m */,
+				3523F8DE1E782D7900E7E128 /* Player.h */,
+				3523F8DF1E782DF600E7E128 /* Player.m */,
 				F26C054C1E7644DA00084A14 /* Main.storyboard */,
 				F26C054F1E7644DA00084A14 /* Assets.xcassets */,
 				F26C05511E7644DA00084A14 /* LaunchScreen.storyboard */,
@@ -219,6 +234,7 @@
 					F26C05381E7644DA00084A14 = {
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = 22MKA26T87;
+						LastSwiftMigration = 0820;
 						ProvisioningStyle = Automatic;
 					};
 					F26C05581E7644DA00084A14 = {
@@ -291,7 +307,10 @@
 			files = (
 				F26C054B1E7644DA00084A14 /* GameViewController.m in Sources */,
 				F26C05411E7644DA00084A14 /* AppDelegate.m in Sources */,
+				F26C05771E76454D00084A14 /* NumbersCard.m in Sources */,
+				357E4EFA1E7895A90094AD74 /* CardsPile.m in Sources */,
 				F26C05481E7644DA00084A14 /* GameScene.m in Sources */,
+				3523F8E01E782DF600E7E128 /* Player.m in Sources */,
 				F26C053E1E7644DA00084A14 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -439,12 +458,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = 22MKA26T87;
 				INFOPLIST_FILE = "0-11/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.lyc.daVinci.code.--11";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "0-11/0-11-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -452,12 +475,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = 22MKA26T87;
 				INFOPLIST_FILE = "0-11/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.lyc.daVinci.code.--11";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "0-11/0-11-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -530,6 +556,7 @@
 				F26C056F1E7644DA00084A14 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F26C05701E7644DA00084A14 /* Build configuration list for PBXNativeTarget "0-11Tests" */ = {
 			isa = XCConfigurationList;
@@ -538,6 +565,7 @@
 				F26C05721E7644DA00084A14 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F26C05731E7644DA00084A14 /* Build configuration list for PBXNativeTarget "0-11UITests" */ = {
 			isa = XCConfigurationList;
@@ -546,6 +574,7 @@
 				F26C05751E7644DA00084A14 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
