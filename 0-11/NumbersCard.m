@@ -14,17 +14,38 @@
 
 @implementation NumbersCard
 
--(id)init{
-    self = [super init];
-    return self;
+-(id)initWith:(ColorType)Color and:(int)Points{
+    if(self = [super init]){
+        isClear = false;
+        points = Points;
+        color = Color;
+        return self;
+    }else
+        return nil;
+}
+
+- (NSComparisonResult)compare:(id)other
+{
+    if (points < [other getPoints]) {
+        return NSOrderedAscending;
+    }else if(points > [other getPoints]){
+        return NSOrderedDescending;
+    }else{
+        if (color == [other whatColor])
+            return NSOrderedSame;
+        else if (color == BlackCard)
+            return NSOrderedAscending;
+        else
+            return NSOrderedDescending;
+    }
 }
 
 -(bool)isCardClear{
     return isClear;
 }
 
--(void)setCard:(bool)ClearOrNot{
-    isClear = true;
+-(void)setCard:(bool)isClearOrNot{
+    isClear = isClearOrNot;
 }
 
 -(void)setJoker:(int)point{

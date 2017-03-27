@@ -10,17 +10,15 @@
 #define CardsPile_h
 
 #import <Foundation/Foundation.h>
+#import "NumbersCard.h"
 
 @interface CardsPile : NSObject
-{
-    NSMutableArray *pile;
-}
+
+@property (nonatomic, strong) NSMutableArray *pile;
 
 -(void)setPile;
--(void)removeCardOf:(int)n PointsIn:(ColorType)color;
--(void)addCardsof:(int)n PointsIn:(ColorType)color;
--(void)addJokerIn:(ColorType)color;
--(void)removeJokerIn:(ColorType)color;
+-(void)sortPile;
+-(NSInteger)find:(ColorType)color Cardsof: (int)points;
 
 @end
 
@@ -28,12 +26,17 @@
 @interface UserCardsPile : CardsPile
 
 -(void)setPile;
+-(void)addCardsof:(int)n PointsIn:(ColorType)color;
+-(void)addJokerIn:(ColorType)color;
+
 
 @end
 
 @interface MainCardsPile : CardsPile
 
 -(void)setPile;
+-(void)removeCardOf:(int)n PointsIn:(ColorType)color;
+-(void)removeJokerIn:(ColorType)color;
 
 @end
 

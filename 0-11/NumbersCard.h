@@ -14,17 +14,19 @@
 typedef enum : NSUInteger {
     WhiteCard,
     BlackCard,
-    JokerCard,
 } ColorType;
+
+#define JOKER_CARD 12
 
 @interface NumbersCard : NSObject 
 {
     int points;
-    const ColorType color;
+    ColorType color;
     bool isClear;
 }
 
--(id)init;
+-(id)initWith:(ColorType)Color and:(int)Points;
+- (NSComparisonResult)compare:(id)other;
 -(bool)isCardClear;
 -(void)setCard:(bool)ClearOrNot;
 -(void)setJoker:(int)point;
