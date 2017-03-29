@@ -14,5 +14,11 @@
 
 @implementation Player
 
+-(void)initPlayerHand{
+    _clearCount = -1;
+    if (_pPile == nil) {
+        [_pPile setPile];
+    }
+}
 
 @end

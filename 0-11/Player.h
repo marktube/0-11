@@ -14,11 +14,13 @@
 #import <CoreBluetooth/CoreBluetooth.h>
 
 @interface Player : NSObject
-{
-    CardsPile *cards;
-}
+
+@property NSInteger clearCount;
+
+@property (nonatomic, strong) UserCardsPile* pPile;
+
+-(void)initPlayerHand;
 
 @end
-
 
 #endif /* Player_h */
